@@ -1,0 +1,87 @@
+<div class="container py-5">
+    <div class="container-fluid px-0">
+        <div class="main-title">Galería de la Comunidad</div>
+        <div class="subtitle">Momentos y memorias de Gran Mallama</div>
+
+        <!-- Filtros de Galería -->
+        <section class="event-section">
+            <div class="section-title">EXPLORAR GALERÍA</div>
+            <div class="row g-3 mb-4">
+                <div class="col-md-3">
+                    <select class="form-select" id="categoryFilter">
+                        <option value="">Todas las categorías</option>
+                        <option value="eventos">Eventos</option>
+                        <option value="paisajes">Paisajes</option>
+                        <option value="arte">Arte</option>
+                        <option value="personas">Personas</option>
+                        <option value="infraestructura">Infraestructura</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select" id="yearFilter">
+                        <option value="">Todos los años</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select" id="eventFilter">
+                        <option value="">Todos los eventos</option>
+                        <option value="feria">Feria Artesanal</option>
+                        <option value="festival">Festival Cultural</option>
+                        <option value="talleres">Talleres</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" id="searchGallery" placeholder="Buscar en galería...">
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería de Fotos -->
+        <section class="news-section" id="fotos">
+            <div class="section-title">FOTOGRAFÍAS DESTACADAS</div>
+            <div class="gallery-list" id="galeriaContainer"></div>
+        </section>
+
+        <!-- Arte Comunitario -->
+        <section class="event-section" id="arte">
+            <div class="section-title">ARTE COMUNITARIO</div>
+            <div class="row g-4">
+                <!-- ... tus cards de arte ... -->
+            </div>
+        </section>
+
+        <!-- Galería de Videos -->
+        <section class="news-section">
+            <div class="section-title">VIDEOS DE LA COMUNIDAD</div>
+            <div class="row g-4">
+                <!-- ... tus cards de video ... -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal para Ver Imagen Completa -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Imagen</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" alt="" class="img-fluid">
+                    <div class="mt-3">
+                        <p id="imageDescription" class="text-muted"></p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="downloadBtn">Descargar</button>
+                    <button type="button" class="btn btn-success" id="shareImageBtn">Compartir</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

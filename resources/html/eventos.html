@@ -1,0 +1,79 @@
+<div class="container-fluid px-0">
+    <div class="main-title">Eventos de la Comunidad</div>
+    <div class="subtitle">Participa en las actividades de Gran Mallama</div>
+
+    <!-- Eventos Próximos -->
+    <section class="event-section" id="proximos">
+        <div class="section-title">PRÓXIMOS EVENTOS</div>
+        <div class="event-list" id="proximosEventos"></div>
+    </section>
+
+    <!-- Calendario de Eventos -->
+    <section class="news-section" id="calendario">
+        <div class="section-title">CALENDARIO DE EVENTOS</div>
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <button class="btn btn-outline-primary" id="prevMonthBtn">
+                <i class="bi bi-chevron-left"></i> Mes Anterior
+            </button>
+            <h4 id="currentMonth" class="mb-0">Julio 2025</h4>
+            <button class="btn btn-outline-primary" id="nextMonthBtn">
+                Mes Siguiente <i class="bi bi-chevron-right"></i>
+            </button>
+        </div>
+        
+        <!-- Cuadrícula del Calendario -->
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Dom</th>
+                        <th>Lun</th>
+                        <th>Mar</th>
+                        <th>Mié</th>
+                        <th>Jue</th>
+                        <th>Vie</th>
+                        <th>Sáb</th>
+                    </tr>
+                </thead>
+                <tbody id="calendarBody">
+                    <!-- ... celdas del calendario ... -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Lista de Todos los Eventos -->
+    <section class="event-section">
+        <div class="section-title">TODOS LOS EVENTOS</div>
+        <!-- Filtros -->
+        <div class="row g-3 mb-4">
+            <div class="col-md-4">
+                <select class="form-select" id="eventTypeFilter">
+                    <option value="">Todos los tipos</option>
+                    <option value="Cultural">Cultural</option>
+                    <option value="Educativo">Educativo</option>
+                    <option value="Salud">Salud</option>
+                    <option value="Deportivo">Deportivo</option>
+                    <option value="Reunión">Reunión</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <select class="form-select" id="veredaFilter">
+                    <option value="">Todas las veredas</option>
+                    <option value="Centro">Centro</option>
+                    <option value="Norte">Norte</option>
+                    <option value="Sur">Sur</option>
+                    <option value="Este">Este</option>
+                    <option value="Oeste">Oeste</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="searchEvents" placeholder="Buscar eventos...">
+            </div>
+        </div>
+        <div class="news-list" id="eventosContainer"></div>
+    </section>
+</div>
+
+
+

@@ -1,0 +1,38 @@
+<div class="container-fluid px-0">
+    <div class="main-title">Noticias</div>
+    <div class="subtitle">Mantente informado sobre nuestra comunidad</div>
+
+    <!-- Noticias Destacadas -->
+    <section class="news-section">
+        <div class="section-title">NOTICIAS DESTACADAS</div>
+        <div class="news-list" id="newsDestacadas"></div>
+    </section>
+
+    <!-- Todas las Noticias con Filtro -->
+    <section class="news-section">
+        <div class="section-title">TODAS LAS NOTICIAS</div>
+        <!-- Filtros de Noticias (ahora dentro de esta sección) -->
+        <div class="row g-3 mb-4">
+            <div class="col-md-4">
+                <select class="form-select" id="categoriaFilter">
+                    <option value="">Todas las categorías</option>
+                    <option value="general">General</option>
+                    <option value="educacion">Educación</option>
+                    <option value="salud">Salud</option>
+                    <option value="desarrollo">Desarrollo</option>
+                    <option value="cultura">Cultura</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <input type="date" class="form-control" id="fechaFilter">
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="Buscar noticias..." id="searchInput">
+            </div>
+        </div>
+        <div class="news-list" id="newsContainer"></div>
+        <!-- Paginación aquí si la necesitas -->
+    </section>
+</div>
+
+

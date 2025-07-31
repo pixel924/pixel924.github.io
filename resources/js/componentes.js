@@ -2,7 +2,7 @@
 export const noticiasEjemplo = [
     {
         id: 1,
-        titulo: "Inauguración del Nuevo Centro de Salud",
+        titulo: "Noticia 1 (EJEMPLO)",
         categoria: "Salud",
         fecha: "2025-06-15",
         img: "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?auto=format&fit=crop&w=600&q=80",
@@ -10,7 +10,7 @@ export const noticiasEjemplo = [
     },
     {
         id: 2,
-        titulo: "Nuevo Programa de Alfabetización Digital",
+        titulo: "Noticia 2 (EJEMPLO)",
         categoria: "Educación",
         fecha: "2025-06-10",
         img: "https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=600&q=80",
@@ -18,7 +18,7 @@ export const noticiasEjemplo = [
     },
     {
         id: 3,
-        titulo: "Proyecto de Agricultura Sostenible",
+        titulo: "Noticia 3 (EJEMPLO)",
         categoria: "Desarrollo",
         fecha: "2025-06-08",
         img: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=400&q=80",
@@ -85,7 +85,7 @@ export const eventosEjemplo = [
     },
     {
         id: 2,
-        titulo: "Feria Artesanal",
+        titulo: "Evento 2 (EJEMPLO)",
         tipo: "Cultural",
         vereda: "Centro",
         fecha: "2025-09-21",
@@ -103,7 +103,7 @@ export const eventosEjemplo = [
     },
     {
         id: 3,
-        titulo: "Taller de Agricultura",
+        titulo: "Evento 3 (EJEMPLO)",
         tipo: "Educativo",
         vereda: "Norte",
         fecha: "2025-10-05",

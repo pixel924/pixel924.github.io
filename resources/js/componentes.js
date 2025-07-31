@@ -66,6 +66,25 @@ export function renderNoticias(containerId, noticias) {
 export const eventosEjemplo = [
     {
         id: 1,
+        titulo: "Lunada de Verano",
+        tipo: "Cultural",
+        vereda: "Centro",
+        fecha: "2025-08-01",
+        hora: "2:00 PM",
+        lugar: "Salón Cultural",
+        organizador: "Kevin Pizanda - Jrking Music",
+        resumen: "Preparate para recibir el verano con toda la energia en una jornada cultural, deportiva y musical. Entrada a cinco mil pesos.",
+        actividades: [
+            "Artistas y grupos locales.",
+            "Torneos de ping pong.",
+            "Torneos de ajedrez",
+            "Torneos de boxeo.",
+            "Presentacion de DJ's",
+        ],
+        img: "resources/images/lunada-portada.jpg"
+    },
+    {
+        id: 2,
         titulo: "Feria Artesanal",
         tipo: "Cultural",
         vereda: "Centro",
@@ -83,7 +102,7 @@ export const eventosEjemplo = [
         img: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
     },
     {
-        id: 2,
+        id: 3,
         titulo: "Taller de Agricultura",
         tipo: "Educativo",
         vereda: "Norte",

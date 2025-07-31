@@ -22,13 +22,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function actualizarTitulo(ruta) {
         const titulos = {
-            '/inicio': 'Gran Mallama - Inicio',
-            '/noticias': 'Gran Mallama - Noticias',
-            '/eventos': 'Gran Mallama - Eventos',
-            '/galeria': 'Gran Mallama - Galería',
-            '/contacto': 'Gran Mallama - Contacto'
+            '/inicio': 'Mi Terre - Inicio',
+            '/noticias': 'Mi Terre - Noticias',
+            '/eventos': 'Mi Terre - Eventos',
+            '/galeria': 'Mi Terre - Galería',
+            '/contacto': 'Mi Terre - Contacto'
         };
-        document.title = titulos[ruta] || 'Gran Mallama';
+        document.title = titulos[ruta] || 'Mi Terre';
     }
 
     async function cargarFragmento(ruta) {
